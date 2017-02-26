@@ -1,0 +1,274 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+\usepackage{hyperref}
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+\newcommand{\contact}[4]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+			{#2}\\ \smallskip 
+			{#3}\\ \smallskip
+			{#4}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Sridhar Reddy Maddireddy}{+1 (352)-678-9009}{3515 SW, 39th Blvd, Apt \#30C, Gainesville, Florida-32608, U.S.A.}{sridharreddy.maddireddy@gmail.com}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\smallskip
+
+% Education
+\header{Education}
+
+\begin{body}
+	\vspace{14pt}
+	\medskip
+	\textbf{University of Florida, Gainesville, U.S.A.} \hfill \emph{August 2016 - Present} \\
+	\emph{Master of Science in Computer Science.} \hfill \emph{}\\
+	\medskip
+	\textbf{Vellore Institute of Technology, Vellore, India  }{} \hfill \emph{July 2011-May 2015}{} \\
+	\emph{Bachelor of Technology in Computer Science and Engineering.}{} \hfill \emph{CGPA: 8.64/10.0}\\
+  
+
+\end{body}
+
+\smallskip
+
+\header{Work Experience}
+\begin{body}
+    \vspace{14pt}
+    \smallskip
+    \textbf{Zoho Corporation Pvt Ltd., Chennai, India } \hfill
+    \emph{June 2015 - July 2016}{}\\
+    \smallskip
+    \emph{\textbf{\underline{Member of Technical Staff}}}
+    	\begin{itemize} \itemsep -0pt
+		\item Developed a Marketplace for Zoho Plugins where developers/partners can list their plugins for various Zoho products.
+		\item Initiated and maintained the infrastructure required for Marketplace using Amazon Web Services (AWS).
+		\item Implemented the search feature for plugins inside Marketplace using Algolia and automated the workflow indexing of plugins.
+		%\item Experience using AWS Elastic Cloud Compute (EC2), Amazon Relational Database Service (RDS), Elastic Load Balancer.
+	%	\item Designed and implemented the partner's plugin console.
+		\item Implemented the Marketplace inside the Zoho CRM product this helps the end user to use a single product to install a plugin.
+		\item Implemented upgrade \& uninstallation of plugins and also developed custom inventory templates for plugins.
+	%	\item Implemented third party mail integration for vertical CRM users provided by different email service providers.
+        \item Enhanced the existing workflow actions in Zoho Developer console by adding time-based actions where users can specify the time/date and action(s) to trigger.
+		\item Implemented a feature where Zoho partners can choose whether their users can signup directly or through invite only to vertical CRM solution.
+		\item Managed the Platform team code base and administrated the milestone deployments.
+	\end{itemize}
+    
+\end{body}
+
+
+
+\smallskip
+
+
+\header{Internship}
+\begin{body}
+\vspace{14pt}
+\smallskip
+	\textbf{Zoho Corporation Pvt Ltd., Chennai, India } \hfill \emph{December 2014 - April 2015} \\
+	\smallskip
+	\emph{\textbf{\underline{Student Intern}}}
+		%Working on CRM Platform feature in which users can customize their product by editing multiple components .Implementing SSO(Single Sign On) across multiple platforms using SAML(Security Assertion Markup Language) which solves almost every problem when customers requesting for new features.\\
+\vspace*{-4pt}
+\smallskip
+	\begin{itemize} \itemsep -0pt
+		\item Implemented Single Sign On (SSO) across multiple applications/products using Security Assertion Markup Language (SAML) where users can access and sign in to multiple applications/products using their Zoho CRM login credentials, which is very useful when customers request independent features which are not provided by Zoho family. Also tested with multiple service providers like Zendesk, ServiceNow, Marketo.
+		\item Implemented custom module and custom email template features, where users can create their own modules and email templates. Also partners have the provision to send the customized email templates to customers during signup/invite or for promotional purpose.
+		\item Implemented the copy-customization feature for homepage layouts, dashboards \& reports which are developed in Zoho sandbox for vertical CRM solution.
+	\end{itemize}
+\end{body}
+\smallskip
+
+\smallskip
+\smallskip
+
+
+\begin{body}
+\vspace{14pt}
+	\textbf{Sakhatech Information Systems Private Limited, Bangalore } \hfill \emph{June 2014 - July 2014} \\
+	\smallskip
+	\emph{\textbf{\underline{Software Development Engineer Intern}}}
+		%Working on CRM Platform feature in which users can customize their product by editing multiple components .Implementing SSO(Single Sign On) across multiple platforms using SAML(Security Assertion Markup Language) which solves almost every problem when customers requesting for new features.\\
+\vspace*{-4pt}
+\smallskip
+	\begin{itemize} \itemsep -0pt
+		\item Developed a Advanced Log Analyzer tool which collects logs from web server and gives the application developer a detailed performance analysis of the web application using Elastic Search, Kibana and Logstash.
+		%\item Implemented MapReduce program for faster processing of logs.
+	\end{itemize}
+\end{body}
+\smallskip
+\smallskip
+\smallskip
+\smallskip
+\smallskip
+
+
+% Experience
+%\header{Relevant Courses}
+
+%\begin{body}
+%	\vspace{14pt}
+%	\textbf{Computer Science and Engineering}, \emph{Computer Networks,Database Systems,Operating Systems,Computer Programming,Computer Architecture,Algorithm Design and Analysis,Embeded Systems,Theory of Computation,Internet and Web Programming,Software Engineering, Operations Research.}\\
+%	\vspace*{-4pt}
+%	\medskip
+
+%	\textbf {Electives:}
+%	\vspace*{-4pt}
+%	\begin{itemize} \itemsep -0pt
+%		\item Introduction to Artificial Intelligence.
+%		\item Soft Computing.
+%		\item Data Warehousing and Data Mining
+%	\end{itemize}
+%\end{body}
+
+
+
+% Publications
+\smallskip
+\smallskip
+\smallskip
+\smallskip
+
+\smallskip
+\smallskip
+\smallskip
+\smallskip
+\smallskip
+\smallskip
+\smallskip
+
+\header{Projects}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Producer-Consumer Problem (C)} \hfill \emph{September-2016} \\
+	Implemented the solution for producer-consumer synchronization problem using mutex and semaphore in Xinu operating system and handled all cases without any faulty situations.\\
+	\smallskip
+	\textbf{Circular Ludo (C++)} \hfill \emph{September-2012} \\
+	Implemented a game similar to ludo where players's pawns move across the boundaries and finally reach the center of the board.\\
+	\smallskip
+	%\textbf{Search Suggestion (Python):} \hfill \emph{December-2012} \\
+	%Implemented a search suggestion app using python , Freebase API, and hosted on Google App Engine, which uses tags to suggest the relevant results.\underline{ \href{http://www.sridharreddy0007m.appspot.com}{Sridhar's search}}. \\
+	\textbf{Iterative Dominance (C++)} \hfill \emph{October-2013} \\
+	Implemented the Iterative Dominance Algorithm with and without saddle point on real time dataset which is  based on several Cricket teams and predicted which is the most optimal way to win a match by selecting different players at different times.\\
+	
+		\smallskip
+	\textbf{UP Programming Language (C \& lex)} \hfill \emph{March-2014} \\	
+	Programmed a compiler from scratch using C \& lex as a part of Programming Languages and Translators course which includes all arithmetic operations. 	\\
+\end{body}
+\smallskip
+
+
+% Skills
+\header{Languages \& Technologies}
+
+\begin{body}
+	\vspace{14pt}
+%	\emph{\textbf{Programming:}}{}  HTML/CSS, PHP(beginner), MySql, C++, C, Java(Moderate), JavaScript, Python(Beginner), \LaTeX.\\
+
+%	\medskip
+	%\emph{\textbf{Knowledge in:}}{} Ruby on Rails,Java,Python,Git,Java Script,R.\\
+%	\emph{\textbf{Operating Systems:}}{} Windows, Mac OS X, Linux.\\
+	\begin{itemize} \itemsep -0pt
+		\item \textbf{Programming Languages:} C, C++, Java/Struts, MySQL, HTML, CSS, Javascript, AJAX, Shell Scripting, Python(beginner), Cassandra, AngularJS, NodeJS.
+		\item \textbf{Tools:} Eclipse, IntelliJ, Xcode.
+		\item \textbf{Operating Systems:} Linux, Mac OS X, Windows.
+		\item \textbf{Cloud Computing:} Amazon Web Services(AWS), Google Cloud Platform, Docker, Chef \& Heroku.
+		\item \textbf{Version Control:} Git, Mercurial(hg).
+	\end{itemize}
+\end{body}
+
+\smallskip
+
+
+% Leadership
+\header{Achievements \& Activities }
+
+\begin{body}
+	\vspace{14pt}
+	\begin{itemize} \itemsep -0pt
+		\item Final year project selected as one of the best projects for ABET certification of School of Computer Science and Engineering(SCSE).
+		\item Secured top 1\% in VITEEE-2011 national entrance exam among 160,000 students. 
+		\item Active Open Source Contibutor on \underline{\textbf{ \href{http://www.github.com/sridharreddy7}{GitHub.}}}
+		%\item Build a Ruby on Rails application from scratch without any previous knowledge in less than 3hrs and won a competition.
+		
+		%\item Experience with different APIs.
+		\item Active member in Computer Society of India (CSI-VIT).
+		\item Active member in Students for the Exploration and Development of Space(SEDS-VIT).
+		%\item Worked as Sales Volunteer in Riviera -2013.
+		%\item Active open source contributor on \underline{\textbf{ %\href{https://www.github.com/sridharreddy7}{Github}}}
+		%\item Active participant in Competitive Programming Competitions.
+	%	\item Secured All India rank 2305 in VITEEE-2011 among 1,60,000 students.
+	%	\item Cisco Certified Network Associate in Network Fundamentals.
+		\item Active member in National Social Service.
+	%	\item Finalist (Top 10)  in IEEE Programming League(IPL) an algorithm coding competition organised in Gravitas-2013 across the nation.
+		\item Worked as a co-ordinator for the event 4th-Estate in Gravitas-2012.
+		\item As a sales Manager for Riviera-2014.
+	\end{itemize}
+\end{body}
+
+%\smallskip
+% Awards and Honors
+\end{document}
